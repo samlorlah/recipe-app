@@ -4,5 +4,8 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
     passwords: 'users/passwords'
   }
-  root to: 'users#index'
+  root to: 'food#index'   # set the root to 'foods#index'
+
+  resources :foods   # add a route for the 'foods' resource
+  resources :recipes # add a route for the 'recipes' resource
 end
