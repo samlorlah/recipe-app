@@ -1,9 +1,8 @@
 class RecipesController < ApplicationController
-
   def index
     @recipes = current_user.recipes.where(user_id: params[:food_id])
   end
-  
+
   def new
     @recipe = current_user.recipes.new(user_id: params[:food_id])
   end
