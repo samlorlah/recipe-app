@@ -1,0 +1,22 @@
+<div class="container rounded-top mb-4">
+  <h1 class="mb-4 text-center">Shopping Lists </h1>
+  <div class="d-flex gap-4 my-5 justify-content-center">
+    <h4>Amount of food items to buy:</h4>
+    <h4>Total price of food items needed:</h4>
+  </div>
+
+  <table class="table">
+  <thead>
+    <tr class="border border-gray border-2 shadow-lg bg-body-tertiary">
+      <th class="border-end border-gray border-2 px-3">Food</th>
+      <th class="border-end border-gray border-2 px-3">Quantity</th>
+      <th class="border-end border-gray border-2 px-3">Price</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+<div>
+  <%= link_to 'Back to Recipe'.html_safe, user_recipes_path(current_user.id), class: "btn btn-outline-primary m-2 text-end" %>
+</div>
+</div>

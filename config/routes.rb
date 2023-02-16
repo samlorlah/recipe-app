@@ -8,5 +8,7 @@ Rails.application.routes.draw do
   resources :users, only: [:index] do
     resources :foods, only: [:index, :new, :create, :destroy]
     resources :recipes, only: [:index, :new, :create, :destroy]
+    resources :public_recipes, only: [:index]
+    resources :shopping_lists, only: [:index]
   end
 end

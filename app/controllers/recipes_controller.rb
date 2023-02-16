@@ -1,6 +1,9 @@
 class RecipesController < ApplicationController
+  before_action :authenticate_user!
+
   def index
     @recipes = current_user.recipes
+    @user_id = current_user.id
   end
 
   def new

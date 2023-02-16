@@ -7,4 +7,8 @@ class Recipe < ApplicationRecord
   validates :cooking_time, presence: true
   validates :description, presence: true
   validates :public, presence: true
+
+  def total_price
+    recipe_food.sum { |item| item.quantity * item.food.price }
+  end
 end

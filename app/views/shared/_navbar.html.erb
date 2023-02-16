@@ -16,10 +16,10 @@
           <li class="nav-item">
             <%= link_to "Recipes", user_recipes_path(current_user.id), class:"nav-link active" %>
           </li>
+          <li class="nav-item">
+            <%= link_to "Public Recipes", user_public_recipes_path(user_id: current_user.id, public: true), class:"nav-link active" %>
+          </li>
         <% end %>
-        <li class="nav-item">
-          <%= link_to "Public Recipes", new_user_registration_path, class:"nav-link active" %>
-        </li>
       </ul>
         <div class="gap-3">
           <% if user_signed_in? %>
