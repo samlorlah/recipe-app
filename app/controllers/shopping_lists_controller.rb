@@ -1,16 +1,18 @@
 class ShoppingListsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
-    @recipes = @user.recipes.includes(recipe_foods: [:food])
-    # @recipe_foods = @recipe.recipe_foods.includes([:food])
-    # @total = sum(@recipe_foods)
-  end
+    @recipe = Recipe.find(params[:recipe_id])
+    @recipe_foods = @recipe.recipe_foods.includes(:food).order(:id)
 
-  # def sum(recipe_foods)
-  #   total = 0
-  #   recipe_foods.each do |item|
-  #     total += item.food.price * item.quantity.to_i
-  #   end
-  #   total
-  # end
+    @missing_ingredients = @recipe_foods.select { |ingredient| ingredient.quantity > ingredient.food.quantity }
+    @missing_ingredients = @missing_ingredients.map do |ingredient|
+      {
+        name: ingredient.food.name,
+        unit: ingredient.food.measurement_unit,
+        quantity: ingredient.quantity - ingredient.food.quantity,
+        price: ingredient.food.price * (ingredient.quantity - ingredient.food.quantity)
+      }
+    end
+
+    @total_price = @missing_ingredients.map { |ingredient| ingredient[:price] }.sum
+  end
 end

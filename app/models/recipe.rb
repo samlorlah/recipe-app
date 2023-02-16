@@ -9,6 +9,10 @@ class Recipe < ApplicationRecord
   validates :public, presence: true
 
   def total_price
-    recipe_food.sum { |item| item.quantity * item.food.price }
+    recipe_foods.sum { |item| item.quantity * item.food.price }
+  end
+
+  def total_quantity
+    recipe_foods.count
   end
 end
