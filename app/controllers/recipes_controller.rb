@@ -14,7 +14,7 @@ class RecipesController < ApplicationController
     @recipe = current_user.recipes.new(recipe_params)
 
     if @recipe.save
-      redirect_to user_recipes_url, notice: 'Recipe was successfully created.'
+      redirect_to recipes_url, notice: 'Recipe was successfully created.'
     else
       render :new, status: :unprocessable_entity
     end
@@ -33,7 +33,7 @@ class RecipesController < ApplicationController
     else
       flash[:error] = 'Error: Recipe could not be removed'
     end
-    redirect_to user_recipes_url
+    redirect_to recipes_url
   end
 
   def recipe_params
