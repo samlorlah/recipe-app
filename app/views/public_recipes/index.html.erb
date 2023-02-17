@@ -7,6 +7,7 @@
     <% if recipe.public %>
       <div class="border border-gray border-1 bg-body-tertiary py-4 px-5 mb-4 d-flex">
         <div class="col-5">
+          <a href="<%= recipe_path(id: recipe.id) %>">
           <h4><%= recipe.name %></h4> 
           <h6>By: <%= recipe.user.name %></h6> 
         </div>
