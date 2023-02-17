@@ -169,6 +169,11 @@ rspec
 - Twitter: [@samlorlah](https://twitter.com/samlorlah)
 - LinkedIn: [Oluwamuyiwa Fawole](https://linkedin.com/in/https://www.linkedin.com/in/muyiwa-fawole/)
 
+👤 **Shuhad Loofer**
+
+- GitHub: [@Shuhad786](https://github.com/Shuhad786)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/shuhad-loofer)
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
