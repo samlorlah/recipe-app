@@ -23,12 +23,7 @@ After you're finished please remove all the comments and instructions!
 -->
 
 <div align="center">
-
-  <img src="https://user-images.githubusercontent.com/84629565/202665566-ba1a8ed3-041f-45bc-b21b-efdcc357189b.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
+  <h3><b>Recipe App</b></h3>
 </div>
 
 <!-- TABLE OF CONTENTS -->
