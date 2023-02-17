@@ -76,3 +76,6 @@ group :test do
   gem 'shoulda-matchers'
   gem 'webdrivers'
 end
+
+gem 'bootstrap', '~> 5.2.2'
+gem 'jquery-rails'
