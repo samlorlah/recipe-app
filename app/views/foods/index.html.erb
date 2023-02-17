@@ -20,7 +20,7 @@
             <td>$<%= food.price %> </td>
             <td>
               <% if can? :destroy, food  %>
-                <%= link_to "Delete",user_food_path(user_id: current_user.id, id: food.id), class:"btn btn-outline-danger", "data-turbo-method": :delete %></span>
+                <%= link_to "Delete", food_path(id: food.id), class:"btn btn-outline-danger", "data-turbo-method": :delete %></span>
               <% end %>
             </td>
           </tr>
