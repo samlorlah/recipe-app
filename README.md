@@ -39,6 +39,7 @@ After you're finished please remove all the comments and instructions!
   - [:card\_index: Entity Relationship Diagram ](#card_index-entity-relationship-diagram-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
     - [Install](#install)
     - [Usage](#usage)
   - [👥 Authors ](#-authors-)
@@ -83,7 +84,7 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **[Authentication, User can manage his recepies and foods]**
+- **[Authentication, User can manage his recipies and foods]**
 - **[Guest User can navigate the App and read all ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -92,7 +93,7 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- 
+<p>Will be available soon</p> 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -109,8 +110,19 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 `Git` and `Ruby`
+
 ```
  gem install rails
+```
+
+### Setup
+
+Clone this repository to your desired folder:
+
+```
+git clone git@github.com:samlorlah/recipe-app.git
+
+cd recipe-app 
 ```
 
 ### Install
