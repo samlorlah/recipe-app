@@ -109,7 +109,11 @@ To get a local copy up and running, follow these steps.
 ### Prerequisites
 
 In order to run this project you need:
-`Git` and `Ruby`
+- Visual Studio Code
+- Git
+- Ruby
+- PostgreSQL
+- Rails
 
 ```
  gem install rails
