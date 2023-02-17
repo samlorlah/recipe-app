@@ -1,7 +1,7 @@
 class ShoppingListsController < ApplicationController
   def index
-    @recipe = Recipe.find(params[:recipe_id])
-    @recipe_foods = @recipe.recipe_foods.includes(:food).order(:id)
+    @recipes = Recipe.where(user_id: current_user.id)
+    @recipe_foods = RecipeFood.where(recipe_id: @recipes.ids).includes(:food).order(:id)
 
     @missing_ingredients = @recipe_foods.select { |ingredient| ingredient.quantity > ingredient.food.quantity }
     @missing_ingredients = @missing_ingredients.map do |ingredient|
