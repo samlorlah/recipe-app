@@ -2,7 +2,7 @@ require 'rails_helper'
 
 RSpec.feature 'Public Recipes', type: :feature do
   before :each do
-    @user = User.create(name: 'John Doe', email: 'johnmail@email.com', password: '123456', confirmed_at: Time.now)
+    @user = User.create(name: 'John Doe', email: 'johnmail@email.com', password: '123456')
     @recipe = Recipe.create(user: @user, name: 'Empirial Broth', preparation_time: 5, cooking_time: 5,
                             description: 'Not the greatest food but Maarva made it special', public: true)
 

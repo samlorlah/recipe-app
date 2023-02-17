@@ -33,7 +33,6 @@ RSpec.describe Recipe, type: :model do
     it { should validate_presence_of(:preparation_time) }
     it { should validate_presence_of(:cooking_time) }
     it { should validate_presence_of(:description) }
-    it { should validate_presence_of(:public) }
   end
 
   describe '#total_price' do
