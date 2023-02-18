@@ -35,6 +35,7 @@ After you're finished please remove all the comments and instructions!
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [� Live Demo ](#-live-demo-)
   - [:card\_index: Entity Relationship Diagram ](#card_index-entity-relationship-diagram-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
@@ -86,6 +87,9 @@ After you're finished please remove all the comments and instructions!
 - **[Guest User can navigate the App and read all ]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🛠 Live Demo <a name="live-demo"></a>
+[Recipe App on Rails](https://recipeapp-hs5c.onrender.com)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
